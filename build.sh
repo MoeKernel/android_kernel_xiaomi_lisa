@@ -4,8 +4,8 @@
 # Copyright (C) 2020-2021 Adithya R. | (C) 2024 - Shoiya Akari.
 
 SECONDS=0 # builtin bash timer
-#TC_DIR="$HOME/tc/clang-r450784d"
-TC_DIR="$HOME/tc/clang-20.0.0"
+TC_DIR="$HOME/tc/clang-r450784d"
+#TC_DIR="$HOME/tc/clang-20.0.0"
 AK3_DIR="$HOME/AnyKernel3"
 DEFCONFIG="lisa_defconfig"
 
