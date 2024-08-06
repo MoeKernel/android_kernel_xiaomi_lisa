@@ -1,19 +1,15 @@
 #!/bin/bash
 #
-# Compile script for QuicksilveR kernel
-# Copyright (C) 2020-2021 Adithya R.
+# Compile script for Moeニャン kernel
+# Copyright (C) 2020-2021 Adithya R. | (C) 2024 - Shoiya Akari.
 
 SECONDS=0 # builtin bash timer
-TC_DIR="$HOME/tc/clang-r450784d"
+#TC_DIR="$HOME/tc/clang-r450784d"
+TC_DIR="$HOME/tc/clang-20.0.0"
 AK3_DIR="$HOME/AnyKernel3"
 DEFCONFIG="lisa_defconfig"
 
-ZIPNAME="QuicksilveR-lisa-$(date '+%Y%m%d-%H%M').zip"
-
-if test -z "$(git rev-parse --show-cdup 2>/dev/null)" &&
-   head=$(git rev-parse --verify HEAD 2>/dev/null); then
-	ZIPNAME="${ZIPNAME::-4}-$(echo $head | cut -c1-8).zip"
-fi
+ZIPNAME="MoeKernel-lisa-$(date '+%Y%m%d-%H%M').zip"
 
 if ! [ -d "${TC_DIR}" ]; then
 echo "Clang not found! Cloning to ${TC_DIR}..."
